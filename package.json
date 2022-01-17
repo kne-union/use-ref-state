@@ -1,0 +1,37 @@
+{
+  "name": "@kne/use-ref-state",
+  "version": "0.1.0",
+  "description": "React hook for maintaining correct values, in a clean way, without updates on unmounted components",
+  "main": "dist/index.js",
+  "module": "dist/index.modern.js",
+  "source": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kne-union/use-ref-state.git"
+  },
+  "scripts": {
+    "build": "microbundle --no-compress --format modern,cjs --jsx React.createElement --jsxFragment React.Fragment",
+    "start": "microbundle watch --no-compress --format modern,cjs --jsx React.createElement --jsxFragment React.Fragment"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "hooks",
+    "state",
+    "ref"
+  ],
+  "author": "linzp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kne-union/use-ref-state/issues"
+  },
+  "homepage": "https://github.com/kne-union/use-ref-state#readme",
+  "peerDependencies": {
+    "react": ">=16.x"
+  },
+  "devDependencies": {
+    "microbundle": "^0.14.2"
+  }
+}
